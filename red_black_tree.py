@@ -22,7 +22,7 @@ class Tree:
         return x - 1
 
     def parent(self, index):
-        return self.get_node(math.ceil(index//2))
+        return self.get_node(index//2)
     
     def left_child(self, index):
         return self.get_node(index * 2)
